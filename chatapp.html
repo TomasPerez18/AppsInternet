@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat app</title>
+    <link rel="stylesheet" href="stylechatapp.css">
+    
+
+            <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-firestore.js"></script>
+<script src="scripchat.js"></script>
+       
+</head>
+<body>
+    <div class="header">
+        <div class="appname" onclick="duplicate()">Chatapp</div>
+        <div class="space"></div>
+        <div class="search"> <img src="img/lupa.png" alt="S" width="20px" height="20px"> </div>
+        <div class="submenu"> <img src="img/plus.png" alt="SM" width="20px" height="20px"> </div>
+    </div>  
+    <div class="menu">
+        <div class="camera"> <img src="img/cam.png" alt="C" width="20px" height="20px"></div>
+        <div id="bottom-line" class="chat" onclick="showonlychat()">CHATS</div>
+        <div id="bottom-line" class="estados" onclick="showonlyestados()">ESTADOS</div>
+        <div id="bottom-line" class="llamadas" onclick="showonlyLlamadas()">LLAMADAS</div>
+    </div>
+    <div class="copy">
+    <div class="row" style="display: none;">
+        <div class="icon">
+            <img src="btnstatus.png" width="40px" height="40px" alt="box">
+        </div>
+        <div class="content">
+            <div class="top-row">
+                <div class="chatname">Ciencias</div>
+                <div class="timedate">7:34 a.m.</div>
+            </div>
+        <div class="bottom-row">
+            <div class="contactname">Samuel: Buen día!</div>
+            <div class="status">1</div>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="estado" style="display: none;">
+        <div class="row">
+            <div class="icon">
+                <img src="btnstatus.png" width="40px" height="40px" alt="box">
+            </div>
+            <div class="content">
+                <div class="top-row">
+                    <div class="statename">Juan</div>
+                    
+                </div>
+            <div class="bottom-row">
+                <div class="contactname">Hoy 8:00 a.m.</div>
+                <div class="status">1</div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="llamada" style="display: none;">
+        <div class="row">
+            <div class="icon">
+                <img src="img/tel.jpg" width="40px" height="40px" alt="box">
+            </div>
+            <div class="content">
+                <div class="top-row">
+                    <div class="chatname">Arturo</div>
+                    
+                </div>
+            <div class="bottom-row">
+                <div class="contactname">23 de Mayo 8:00</div>
+                <div class="statusmissed">1</div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="content">
+            <div class="top-row">
+                <div class="chatname"></div>
+                <div class="timedate"></div>
+            </div>
+            <div class="bottom-row">
+                <div class="contactname"></div>
+                <div class="status"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

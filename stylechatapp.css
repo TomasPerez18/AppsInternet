@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;  
+    margin: 0;
+    background-color: white;
+}
+
+.header {
+    display: flex;
+    background-color: green;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: right;
+}
+
+.appname {
+    flex: 6 1 auto;
+    text-align: left;
+    padding-left: 9px;
+}
+
+.space {
+    flex: 6 1 auto;
+}
+
+.search {
+    flex: 1 1 auto;
+}
+
+.submenu {
+    flex: 1 1 auto;
+    padding-right: 9px;
+}
+
+.menu {
+    position: sticky;
+    top: 0;
+    display: flex;
+    background-color: green;
+    color: white;
+    justify-content: space-between;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.camera {
+    flex: 1 1 auto;
+}
+
+.chat {
+    flex: 3 1 auto;
+    border-bottom: 3px solid white;
+    transition-duration: .4s;
+}
+
+.chat:hover, .estados:hover, .llamadas:hover{
+    background-color: lightgreen;
+}
+
+.estados {
+    flex: 3 1 auto;
+    transition-duration: .4s;
+}
+
+.llamadas {
+    flex: 3 1 auto;
+    transition-duration: .4s;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+
+.icon{
+    flex: 1 1 auto;
+    text-align: center;
+}
+.content{
+    display: flex;
+    flex: 5 1 auto;
+    flex-direction: column;
+    border-bottom: 1px solid grey;
+    padding-bottom: 5px;
+}
+.top-row, .bottom-row{
+    display: flex;
+}
+.chatname, .statename{
+    font-weight: bold;
+}
+.chatname, .contactname{
+    flex: 5 1 auto;
+}
+
+.timedate{
+    flex: 1 1 auto;
+    text-align: right;
+    padding: 5px;
+}
+
+.status{
+    border: 1px solid green;
+    border-radius: 10px;
+    padding: 1px;
+    background-color: green;
+    color: white;
+    margin-right: 5px;
+    width: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+.statusmissed{
+        border: 1px solid red;
+        border-radius: 10px;
+        padding: 1px;
+        background-color: red;
+        color: white;
+        margin-right: 5px;
+        width: 20px;
+        text-align: center;
+        font-weight: bold;
+}
+
+
